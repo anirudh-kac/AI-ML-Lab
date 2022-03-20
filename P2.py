@@ -58,7 +58,7 @@ def recAOStar(n):
             
             if min_cost_group == min_cost_group_verify :
                 solvable = True
-                change_heuristic(n,min_cost)
+                change_heuristic(n,min_cost_verify)
                 optimal_child_group[n] = min_cost_group
         #If child has no subtree , then no change in heuristic so update min cost
         else:
@@ -95,7 +95,7 @@ def least_cost_group(and_nodes,or_nodes,marked):
             min_cost = node_wise_cost[cost_key]
             min_cost_group = cost_key
             
-    return [min_cost,min_cost_group]
+    return [min_cost,min_cost_group] 
 
 #return heuristics of a node
 

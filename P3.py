@@ -44,12 +44,6 @@ for i in range(0,len(a)):
                 if temp[k][j]!='?' and temp[k][j]!=S[j]:
                     del temp[k]
                     
-        """
-        for j in range(0,num_attributes):
-            for k in range(1,len(temp)):
-                if temp[k][j] != '?' and temp[k][j] != S[j]:
-                    del temp[k]
-                    """
         
         print("For training example no {} the hypothesis is S{} ".format(i+1,S))
         
